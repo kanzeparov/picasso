@@ -1,0 +1,19 @@
+package com.example.myapplication3;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        ImageView imageView = findViewById(R.id.image);
+        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
+    }
+}
